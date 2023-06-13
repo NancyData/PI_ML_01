@@ -1,7 +1,7 @@
 #Importar librerías necesarias.
 from fastapi import FastAPI
 import pandas as pd
-from modelo import cosine_sim, data
+import joblib
 
 #Instanciar la clase con un título, una descripción.
 app = FastAPI(title='PI_ML',
@@ -14,6 +14,8 @@ def index():
 
 df_original = pd.read_csv('dataset\df_peliculas.csv', sep=",")
 df = df_original.copy()
+data = pd.read_csv('dataset\df_stem.csv')
+cosine_sim = joblib.load('dataset\modelo_kernel.pkl')
 
 #CONSULTA NÚMERO 1: ingresas un mes en minúsculas y cómo respuesta obtienes la cantidad
 #de películas estrenadas ese mes, en el histórico de datos
