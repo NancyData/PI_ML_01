@@ -12,7 +12,7 @@ app = FastAPI(title='PI_ML',
 def index():
     return {"message": 'API realizada por Nancy Contreras'}
 
-df_original = pd.read_csv('dataset\df_peliculas.csv', sep=",")
+df_original = pd.read_csv('dataset\df_peliculas.csv')
 df = df_original.copy()
 data = pd.read_csv('dataset\df_EDA.csv')
 cosine_sim = joblib.load('dataset\modelo_kernel.pkl')
