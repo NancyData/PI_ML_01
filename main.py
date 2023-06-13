@@ -14,7 +14,7 @@ def index():
 
 df_original = pd.read_csv('dataset\df_peliculas.csv', sep=",")
 df = df_original.copy()
-data = pd.read_csv('dataset\df_stem.csv')
+data = pd.read_csv('dataset\df_EDA.csv')
 cosine_sim = joblib.load('dataset\modelo_kernel.pkl')
 
 #CONSULTA NÚMERO 1: ingresas un mes en minúsculas y cómo respuesta obtienes la cantidad
