@@ -12,10 +12,10 @@ app = FastAPI(title='PI_ML',
 def index():
     return {"message": 'API realizada por Nancy Contreras'}
 
-df_original = pd.read_csv('dataset\df_peliculas.csv')
+df_original = pd.read_csv('df_peliculas.csv')
 df = df_original.copy()
-data = pd.read_csv('dataset\df_EDA.csv')
-cosine_sim = joblib.load('dataset\modelo_kernel.pkl')
+data = pd.read_csv('df_EDA.csv')
+cosine_sim = joblib.load('modelo_kernel.pkl')
 
 #CONSULTA NÚMERO 1: ingresas un mes en minúsculas y cómo respuesta obtienes la cantidad
 #de películas estrenadas ese mes, en el histórico de datos
