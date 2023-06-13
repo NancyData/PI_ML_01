@@ -2,15 +2,17 @@
 
 ### MACHINE LEARNING OPERATIONS
 ###### por Nancy Contreras, estudiante dela carrera Data Science en [Soy Henry](http://https://www.soyhenry.com/?utm_source=google&utm_medium=cpc&utm_campaign=GADS_SEARCH_MEX_BRAND&utm_content=Brand&gad=1&gclid=CjwKCAjwhJukBhBPEiwAniIcNbyXF-NP0qG0EJV5DpncHdjQf96v7MGxR_PIr85AXQ8CoHTHIGx78RoC89AQAvD_BwE "Soy Henry")
+
+
 ### **Introducción**
 Hola! Este proyecto tiene por objetivo, entrenar un modelo que recomiende una serie de películas, a raíz de la selección de una. Para ello, se ocupó una base de datos y después de realizar un análisis completo de los mismos se instanció el modelo en una API, terminando con un despliegue en la web. 
 
 ------------
-#### Recorrido por el proyecto
+# Recorrido por el proyecto
 
-:fa-rocket: Archivos Originales para la primera parte del proyecto se encuentran en el siguiente [Link](http://https://drive.google.com/drive/u/2/folders/10KkqiXHJZrBWVzQQxyXmqhUQRT7EQvPw "Link")
+ -Archivos Originales para la primera parte del proyecto se encuentran en el siguiente [Link](http://https://drive.google.com/drive/u/2/folders/10KkqiXHJZrBWVzQQxyXmqhUQRT7EQvPw "Link")
 
-###### :fa-rocket: TRANSFORMACIÓN DE LA BASE DE DATOS
+## -> TRANSFORMACIÓN DE LA BASE DE DATOS
 - Carga de datos en Python :tw-1f40d: por medio de la biblioteca pandas :tw-1f43c:
 - Para poder acceder a los datos, algunas columnas se tuvieron que desanidar
 - Se revisaron campos nulos, algunos se eliminaron y otros se remplazaron por 0
@@ -18,9 +20,9 @@ Hola! Este proyecto tiene por objetivo, entrenar un modelo que recomiende una se
 - Se agregó una columna correspondiente al año de estreno de la película y una columna compuesta de dos columnas asociadas entre sí, dando cómo resultado la columna 'return'
 - Por último, se eliminaron columnas innecesarias
 
-Esta parte de primeras transformaciones a los datos, lo encuentras en el siguiente link: ()
+Esta parte de primeras transformaciones a los datos, lo encuentras en el siguiente link: (https://github.com/NancyData/PI_ML_01/blob/main/Tratamiento_Datos.ipynb)
 
-###### :fa-rocket: DESARROLLO API
+## -> DESARROLLO API
 En un entorno virtual en Python :tw-1f40d: se crearon 6 funciones para los endpoints que se consumirán en la API, se disponibilizaron los datos usando el framework **FastAPI**
 
 Las funciones fueron las siguientes:
@@ -33,10 +35,9 @@ Las funciones fueron las siguientes:
 
 Esta parte de la creación de la API para la codificación de las consultas, lo encuentras en el archivo main.py (este archivo se carga con el dataset ya transformado que encuentras en el siguiente link: (https://github.com/NancyData/PI_ML_01/blob/main/main.py)
 
-****###### :fa-rocket: DESARROLLO API
-Se crearon 6 funciones para los endpoints que se consumirán en la API, se disponibilizaron los datos usando el framework **FastAPI**
 
 **nota** Para utilizar el entorno virtual en Python, se debe primero instalar virtualenv, seguido del siguiente código de activación (WINDOWS):
+
 `pip install virtualenv`
 
 `python -m venv nombre_de_tu_env`
@@ -52,16 +53,16 @@ Se crearon 6 funciones para los endpoints que se consumirán en la API, se dispo
 `uvicorn main:app --reload` #para levantar el servidor
 
 
-###### :fa-rocket: DEPLOYMENT
+## -> DEPLOYMENT
 El desplegado se hizo en la plataforma de *RENDER* al que se puede acceder através del siguientes link: 
 `<link>`  https://myfirstproject-8zpx.onrender.com
 
-###### :fa-rocket: ANÁLISIS EXPLORATORIO DE LOS DATOS
+## -> ANÁLISIS EXPLORATORIO DE LOS DATOS
 Se realizó un análisis más profundo, examinando cada coumna que conformaba el dataset que surgio de la primera transformación, se tomaron decisiones de acuerdo a la experiencia personal, y con base a resultados de la búsqueda de outliers, todo enfocado a obtener el dataset óptimo para la parte del modelado de datos
 
 El archivo correspondiente a este análisis, lo encuentras en el siguiente link: Puedes ver el video con el proyecto deployado en el siguiente enlace: [LINK]('Eda_Modelo.ipynb')
 
-###### :fa-rocket: SISTEMA DE RECOMENDACIÓN
+## -> SISTEMA DE RECOMENDACIÓN
 Una vez con el dataset listo, con la columna de tags creada, previamente lematizada con la ayuda de la librería *Scikit-learn*, la cuál se debe de descargar previamente con el siguiente código (Windows): 
 
 `pip install -U scikit-learn`
@@ -76,12 +77,12 @@ El archivo correspondiente al código para el sistema de recomendación, lo encu
 
 ------------
 
-##### :fa-folder-open-o: ABRE Y EJECUTA LOS ARCHIVOS
+### ABRE Y EJECUTA LOS ARCHIVOS
 
 ------------
 
 Puedes ver el video con el proyecto deployado en el siguiente enlace:
 
-## [VIDEO YOUTUBE](http://https://youtu.be/LPoPV5E88LY "VIDEO")
+## [VIDEO YOUTUBE](http://https://youtu.be/LPoPV5E88LY)
 
-[========]
+`<link>` https://youtu.be/LPoPV5E88LY
